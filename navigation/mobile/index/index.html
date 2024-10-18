@@ -1,0 +1,1133 @@
+<nav class="cs-offcanvas-navigation" aria-label="Mobile Navigation">
+
+    <div class="cs-offcanvas-navigation__search">
+        <form role="search" class="cs-header-search cs-header-search--in-offcanvas" action="https://www.megaport.fr/catalogsearch/result/" method="get" id="cs-header-search-offcanvas">
+            <div class="cs-header-search__field cs-header-search__field--offcanvas">
+                <label class="label cs-header-search__label" for="search" data-role="minisearch-label">
+                    <span>Chercher</span>
+                </label>
+                <input id="search-offcanvas" data-mage-init='{
+                        "quickSearch":{
+                            "formSelector":"#cs-header-search-offcanvas",
+                            "url":"https://www.megaport.fr/search/ajax/suggest/",
+                            "destinationSelector":"#search_autocomplete_offcanvas",
+                            "templates": {"term":{"title":"Recherches populaires","template":"Smile_ElasticsuiteCore\/autocomplete\/term"},"product":{"title":"Produits","template":"Smile_ElasticsuiteCatalog\/autocomplete\/product"},"category":{"title":"Cat\u00e9gories","template":"Smile_ElasticsuiteCatalog\/autocomplete\/category"},"product_attribute":{"title":"Attributs","template":"Smile_ElasticsuiteCatalog\/autocomplete\/product-attribute","titleRenderer":"Smile_ElasticsuiteCatalog\/js\/autocomplete\/product-attribute"},"cms_page":{"title":"Page cms","template":"Smile_ElasticsuiteCms\/autocomplete\/cms"}},
+                            "priceFormat" : {"pattern":"%s\u00a0\u20ac","precision":2,"requiredPrecision":2,"decimalSymbol":",","groupSymbol":"\u202f","groupLength":3,"integerRequired":false}                        }
+                    }' type="search" name="q" value="" placeholder="Rechercher..." class="cs-header-search__input" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" aria-expanded="false" autocomplete="off" data-block="autocomplete-form"
+                    aria-controls="search_autocomplete_offcanvas" />
+
+                <div class="cs-header-search__action">
+                    <span class="cs-header-search__close">
+                                <img
+            class="cs-header-search__close-icon inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/header-search/icon-close.svg"
+            alt="fermer"
+                                >
+        <noscript>
+            <img
+                class="cs-header-search__close-icon inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/header-search/icon-close.svg"
+                alt="fermer"
+            >
+        </noscript>
+                            <span class="cs-header-search__close-label">Close search</span>
+                    </span>
+                    <button class="cs-header-search__button" type="submit">
+                        <span class="cs-header-search__button-container cs-header-search__button-container--search">
+                            <svg aria-label="search" class="cs-header-search__button-icon cs-header-search__button-icon--search" xmlns="http://www.w3.org/2000/svg" data-name="search (3)" viewBox="0 0 26 26"><path fill="#89c600" d="M7.18 5.92a.96.96 0 00-1.36 0 6.57 6.57 0 00-1.88 5.32.96.96 0 00.96.86H5a.96.96 0 00.86-1.05 4.65 4.65 0 011.32-3.77.96.96 0 000-1.36z"/><path fill="#89c600" d="M10.98 0a10.98 10.98 0 1010.99 10.98A11 11 0 0010.98 0zm0 20.04a9.06 9.06 0 119.06-9.06 9.07 9.07 0 01-9.06 9.06z"/><path fill="#89c600" d="M25.72 24.36l-6.98-6.98a.96.96 0 00-1.36 1.36l6.98 6.98a.96.96 0 001.36-1.36z"/></svg>                        </span>
+                        <span class="cs-header-search__button-container cs-header-search__button-container--loader">
+                            <svg aria-label="loading" class="cs-header-search__button-icon cs-header-search__button-icon--loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g stroke-width="4" stroke-linecap="round"><path d="M32 20v-8"><animate attributeName="stroke-opacity" dur="750ms" values="1;.85;.7;.65;.55;.45;.35;.25;.15;.1;0;1" repeatCount="indefinite"/></path><path d="M38 21.608l4-6.929"><animate attributeName="stroke-opacity" dur="750ms" values="0;1;.85;.7;.65;.55;.45;.35;.25;.15;.1;0" repeatCount="indefinite"/></path><path d="M42.392 26l6.929-4"><animate attributeName="stroke-opacity" dur="750ms" values=".1;0;1;.85;.7;.65;.55;.45;.35;.25;.15;.1" repeatCount="indefinite"/></path><path d="M44 32h8"><animate attributeName="stroke-opacity" dur="750ms" values=".15;.1;0;1;.85;.7;.65;.55;.45;.35;.25;.15" repeatCount="indefinite"/></path><path d="M42.392 38l6.929 4"><animate attributeName="stroke-opacity" dur="750ms" values=".25;.15;.1;0;1;.85;.7;.65;.55;.45;.35;.25" repeatCount="indefinite"/></path><path d="M38 42.392l4 6.929"><animate attributeName="stroke-opacity" dur="750ms" values=".35;.25;.15;.1;0;1;.85;.7;.65;.55;.45;.35" repeatCount="indefinite"/></path><path d="M32 44v8"><animate attributeName="stroke-opacity" dur="750ms" values=".45;.35;.25;.15;.1;0;1;.85;.7;.65;.55;.45" repeatCount="indefinite"/></path><path d="M26 42.392l-4 6.929"><animate attributeName="stroke-opacity" dur="750ms" values=".55;.45;.35;.25;.15;.1;0;1;.85;.7;.65;.55" repeatCount="indefinite"/></path><path d="M21.608 38l-6.929 4"><animate attributeName="stroke-opacity" dur="750ms" values=".65;.55;.45;.35;.25;.15;.1;0;1;.85;.7;.65" repeatCount="indefinite"/></path><path d="M20 32h-8"><animate attributeName="stroke-opacity" dur="750ms" values=".7;.65;.55;.45;.35;.25;.15;.1;0;1;.85;.7" repeatCount="indefinite"/></path><path d="M21.608 26l-6.929-4"><animate attributeName="stroke-opacity" dur="750ms" values=".85;.7;.65;.55;.45;.35;.25;.15;.1;0;1;.85" repeatCount="indefinite"/></path><path d="M26 21.608l-4-6.929"><animate attributeName="stroke-opacity" dur="750ms" values="1;.85;.7;.65;.55;.45;.35;.25;.15;.1;0;1" repeatCount="indefinite"/></path></g></svg>                        </span>
+                        <span class="cs-header-search__button-label">Chercher</span>
+                    </button>
+                </div>
+
+            </div>
+            <div id="search_autocomplete_offcanvas" class="cs-header-search__autocomplete search-autocomplete cs-autocomplete"></div>
+        </form>
+    </div>
+    <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--current cs-offcanvas-navigation__list--level_0">
+        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_0">
+            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/pc-gamer/" data-category-id="3">
+                                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                            <span class="cs-offcanvas-navigation__text">
+                        PC Gamer                    </span>
+                </a>
+            <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_1">
+                <li class="cs-offcanvas-navigation__item">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/pc-gamer/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC Gamer            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer/">Tous les produits</a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/pc-gamer/intel/" data-category-id="31">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC Gamer Intel            </span>
+        </a>
+                    <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_2">
+                        <li class="cs-offcanvas-navigation__item">
+                            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/pc-gamer/intel/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC Gamer Intel            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer/intel/">Tous les produits</a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer/intel/intel-core-i5/" data-category-id="33">
+                                    <span class="cs-offcanvas-navigation__text">
+                Intel Core i5            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer/intel/intel-core-i7/" data-category-id="34">
+                                    <span class="cs-offcanvas-navigation__text">
+                Intel Core i7            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer/intel/intel-core-i9/" data-category-id="78">
+                                    <span class="cs-offcanvas-navigation__text">
+                Intel Core i9            </span>
+        </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/pc-gamer/amd/" data-category-id="27">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC Gamer AMD            </span>
+        </a>
+                    <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_2">
+                        <li class="cs-offcanvas-navigation__item">
+                            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/pc-gamer/amd/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC Gamer AMD            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer/amd/">Tous les produits</a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer/amd/amd-ryzen-5/" data-category-id="29">
+                                    <span class="cs-offcanvas-navigation__text">
+                AMD Ryzen 5            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer/amd/amd-ryzen-7/" data-category-id="30">
+                                    <span class="cs-offcanvas-navigation__text">
+                AMD Ryzen 7            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer/amd/amd-ryzen-9/" data-category-id="79">
+                                    <span class="cs-offcanvas-navigation__text">
+                AMD Ryzen 9            </span>
+        </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer/pc-gamer-complet/" data-category-id="44">
+                                    <span class="cs-offcanvas-navigation__text">
+                PC gamer complet            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer/pc-gamer-fixe/" data-category-id="59">
+                                    <span class="cs-offcanvas-navigation__text">
+                PC Gamer fixe            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer/pc-premium-gaming/" data-category-id="41">
+                                    <span class="cs-offcanvas-navigation__text">
+                PC premium            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/pc-gamer/pc-par-prix/" data-category-id="149">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC gamer pour tout budget            </span>
+        </a>
+                    <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_2">
+                        <li class="cs-offcanvas-navigation__item">
+                            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/pc-gamer/pc-par-prix/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC gamer pour tout budget            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer/pc-par-prix/">Tous les produits</a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer-1000-euro" data-category-id="153">
+                                    <span class="cs-offcanvas-navigation__text">
+                PC Gamer à 1000€            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer-1500-euro" data-category-id="154">
+                                    <span class="cs-offcanvas-navigation__text">
+                PC Gamer à 1500€            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-gamer-2000-euro" data-category-id="155">
+                                    <span class="cs-offcanvas-navigation__text">
+                PC Gamer à 2000€            </span>
+        </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/windows-11" data-category-id="85">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                Windows 11            </span>
+        </a>
+                    <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_2">
+                        <li class="cs-offcanvas-navigation__item">
+                            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/windows-11">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                Windows 11            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/windows-11">Tous les produits</a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/windows-11-pc-gaming" data-category-id="139">
+                                    <span class="cs-offcanvas-navigation__text">
+                Windows 11 Gaming            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/xbox-game-pass-ultimate" data-category-id="89">
+                                    <span class="cs-offcanvas-navigation__text">
+                Xbox Game Pass            </span>
+        </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_0">
+            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/configurateur-pc/" data-category-id="73">
+                                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                            <span class="cs-offcanvas-navigation__text">
+                        Configurateur PC                    </span>
+                </a>
+            <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_1">
+                <li class="cs-offcanvas-navigation__item">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/configurateur-pc/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                Configurateur PC            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/configurateur-pc/">Tous les produits</a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/configurateur-pc/" data-category-id="120">
+                                    <span class="cs-offcanvas-navigation__text">
+                Configurateur PC            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/configurateur-pc/configurer-un-pc-gamer/" data-category-id="74">
+                                    <span class="cs-offcanvas-navigation__text">
+                Configurer un PC Gamer            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/configurateur-pc/configurer-un-pc-multimedia/" data-category-id="75">
+                                    <span class="cs-offcanvas-navigation__text">
+                Configurer un PC Multimedia            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/configurateur-pc/configurer-un-pc-de-bureau/" data-category-id="76">
+                                    <span class="cs-offcanvas-navigation__text">
+                Configurer un PC de bureau            </span>
+        </a>
+                </li>
+            </ul>
+        </li>
+        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_0">
+            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/ordinateur-de-bureau/" data-category-id="4">
+                                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                            <span class="cs-offcanvas-navigation__text">
+                        Ordinateur de bureau                    </span>
+                </a>
+            <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_1">
+                <li class="cs-offcanvas-navigation__item">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/ordinateur-de-bureau/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                Ordinateur de bureau            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/ordinateur-de-bureau/">Tous les produits</a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/ordinateur-de-bureau/pc-bureautique/" data-category-id="48">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC Bureautique            </span>
+        </a>
+                    <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_2">
+                        <li class="cs-offcanvas-navigation__item">
+                            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/ordinateur-de-bureau/pc-bureautique/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC Bureautique            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/ordinateur-de-bureau/pc-bureautique/">Tous les produits</a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/ordinateur-de-bureau/pc-bureautique/office-pc-intel/" data-category-id="80">
+                                    <span class="cs-offcanvas-navigation__text">
+                Office PC Intel            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/ordinateur-de-bureau/pc-bureautique/office-pc-amd/" data-category-id="81">
+                                    <span class="cs-offcanvas-navigation__text">
+                Office PC AMD            </span>
+        </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/ki-pc" data-category-id="147">
+                                    <span class="cs-offcanvas-navigation__text">
+                PC à intelligence artificielle pour le futur            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/ordinateur-de-bureau/pc-de-streaming/" data-category-id="71">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC de streaming            </span>
+        </a>
+                    <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_2">
+                        <li class="cs-offcanvas-navigation__item">
+                            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/ordinateur-de-bureau/pc-de-streaming/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC de streaming            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/ordinateur-de-bureau/pc-de-streaming/">Tous les produits</a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/ordinateur-de-bureau/pc-de-streaming/streaming-pc-intel/" data-category-id="82">
+                                    <span class="cs-offcanvas-navigation__text">
+                PC de streaming Intel            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/ordinateur-de-bureau/pc-de-streaming/streaming-pc-amd/" data-category-id="83">
+                                    <span class="cs-offcanvas-navigation__text">
+                PC de streaming AMD            </span>
+        </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/ordinateur-de-bureau/workstations/" data-category-id="69">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                Workstations            </span>
+        </a>
+                    <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_2">
+                        <li class="cs-offcanvas-navigation__item">
+                            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/ordinateur-de-bureau/workstations/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                Workstations            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/ordinateur-de-bureau/workstations/">Tous les produits</a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/ordinateur-de-bureau/workstations/nvidia-geforce-rtx-studio-pc/" data-category-id="97">
+                                    <span class="cs-offcanvas-navigation__text">
+                NVIDIA GeForce RTX Studio PC            </span>
+        </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/ordinateur-de-bureau/pc-multimedia/" data-category-id="49">
+                                    <span class="cs-offcanvas-navigation__text">
+                PC Multimedia            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/ordinateur-de-bureau/mini-pc/" data-category-id="7">
+                                    <span class="cs-offcanvas-navigation__text">
+                Mini PC            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/en-securite-avec-windows-11" data-category-id="140">
+                                    <span class="cs-offcanvas-navigation__text">
+                En sécurité avec Windows 11            </span>
+        </a>
+                </li>
+            </ul>
+        </li>
+        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_0">
+            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/pc-editions-speciales/" data-category-id="63">
+                                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                            <span class="cs-offcanvas-navigation__text">
+                        PC Editions speciales                    </span>
+                </a>
+            <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_1">
+                <li class="cs-offcanvas-navigation__item">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/pc-editions-speciales/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC Editions speciales            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-editions-speciales/">Tous les produits</a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/corsair-icue-murals" data-category-id="109">
+                                    <span class="cs-offcanvas-navigation__text">
+                Corsair iCUE Murals            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/pc-pour-jouer" data-category-id="115">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC pour jouer            </span>
+        </a>
+                    <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_2">
+                        <li class="cs-offcanvas-navigation__item">
+                            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/pc-pour-jouer">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC pour jouer            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-pour-jouer">Tous les produits</a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/wukong" data-category-id="150">
+                                    <span class="cs-offcanvas-navigation__text">
+                Black Myth: Wukong            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-editions-speciales/pc-pour-jouer/minecraft/" data-category-id="116">
+                                    <span class="cs-offcanvas-navigation__text">
+                PC Gamer Minecraft            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-editions-speciales/pc-pour-jouer/fortnite/" data-category-id="117">
+                                    <span class="cs-offcanvas-navigation__text">
+                PC Gamer Fortnite            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-editions-speciales/pc-pour-jouer/counter-strike-2/" data-category-id="123">
+                                    <span class="cs-offcanvas-navigation__text">
+                PC Gamer Counter Strike 2            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/pc-pour-jouer" data-category-id="156">
+                                    <span class="cs-offcanvas-navigation__text">
+                <strong>Découvre plus de PC pour jouer</strong>            </span>
+        </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/catalog/category/view/s/nvidia-geforce-rtx/id/67/" data-category-id="67">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC Gamer GeForce RTX Série            </span>
+        </a>
+                    <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_2">
+                        <li class="cs-offcanvas-navigation__item">
+                            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/catalog/category/view/s/nvidia-geforce-rtx/id/67/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                PC Gamer GeForce RTX Série            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/catalog/category/view/s/nvidia-geforce-rtx/id/67/">Tous les produits</a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/nvidia-rtx-40-series" data-category-id="102">
+                                    <span class="cs-offcanvas-navigation__text">
+                GeForce RTX Série 40            </span>
+        </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_0">
+            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/accessoires-pc/" data-category-id="8">
+                                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                            <span class="cs-offcanvas-navigation__text">
+                        Accessoires PC                    </span>
+                </a>
+            <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_1">
+                <li class="cs-offcanvas-navigation__item">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/accessoires-pc/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                Accessoires PC            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/accessoires-pc/">Tous les produits</a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/peripheriques-accessoires-pc/ecrans/" data-category-id="9">
+                                    <span class="cs-offcanvas-navigation__text">
+                Écrans            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/accessoires-pc/clavier/" data-category-id="10">
+                                    <span class="cs-offcanvas-navigation__text">
+                Clavier            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/accessoires-pc/souris/" data-category-id="11">
+                                    <span class="cs-offcanvas-navigation__text">
+                Souris            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/peripheriques-accessoires-pc/casque-audio/" data-category-id="13">
+                                    <span class="cs-offcanvas-navigation__text">
+                Casque audio            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/accessoires-pc/webcam/" data-category-id="15">
+                                    <span class="cs-offcanvas-navigation__text">
+                Webcam            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/peripheriques-accessoires-pc/manettes/" data-category-id="88">
+                                    <span class="cs-offcanvas-navigation__text">
+                Manettes            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/peripheriques-accessoires-pc/micros/" data-category-id="95">
+                                    <span class="cs-offcanvas-navigation__text">
+                Micros            </span>
+        </a>
+                </li>
+            </ul>
+        </li>
+        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_0" data-category-identifier="sale">
+            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/reductions/" data-category-id="62">
+                                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                            <span class="cs-offcanvas-navigation__text">
+                        Réductions                    </span>
+                </a>
+            <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_1">
+                <li class="cs-offcanvas-navigation__item" data-category-identifier="sale">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/reductions/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                Réductions            </span>
+        </a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                    <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/reductions/">Tous les produits</a>
+                </li>
+                <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_1">
+                    <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--parent" href="https://www.megaport.fr/reductions/mega-deals/" data-category-id="90">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Suivant"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--next inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Suivant"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                Mega Deals            </span>
+        </a>
+                    <ul class="cs-offcanvas-navigation__list cs-offcanvas-navigation__list--level_2">
+                        <li class="cs-offcanvas-navigation__item">
+                            <a class="cs-offcanvas-navigation__link cs-offcanvas-navigation__link--return" href="https://www.megaport.fr/reductions/mega-deals/">
+                                    <img
+            class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+            alt="Précédent"
+                                >
+        <noscript>
+            <img
+                class="cs-offcanvas-navigation__icon cs-offcanvas-navigation__icon--prev inline-svg"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/icon_next.svg"
+                alt="Précédent"
+            >
+        </noscript>
+                                        <span class="cs-offcanvas-navigation__text">
+                Mega Deals            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--all-products">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/reductions/mega-deals/">Tous les produits</a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/nvidia-rtx-deals" data-category-id="91">
+                                    <span class="cs-offcanvas-navigation__text">
+                RTX-Deals            </span>
+        </a>
+                        </li>
+                        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_2">
+                            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/amd-deals" data-category-id="104">
+                                    <span class="cs-offcanvas-navigation__text">
+                AMD-Deals            </span>
+        </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_0" data-category-identifier="action">
+            <a class="cs-offcanvas-navigation__link" href="https://www.megaport.fr/promotions" data-category-id="72">
+                                        <span class="cs-offcanvas-navigation__text">
+                        Promo                    </span>
+                </a>
+        </li>
+        <div class="cs-offcanvas-navigation__item cs-offcanvas-navigation__item--level_0 cs-offcanvas-navigation__item--language">
+            <div class="switcher language switcher-language cs-dropdown-switcher cs-dropdown-switcher--offcanvas cs-dropdown-switcher--language" data-ui-id="language-switcher" id="switcher-language-offcanvas">
+                <span class="cs-visually-hidden label switcher-label"><span>Pays</span></span>
+                <div class="actions dropdown options switcher-options">
+                    <div class="action toggle switcher-trigger cs-dropdown-switcher__trigger" id="switcher-language-trigger-offcanvas" data-mage-init='{"dropdown":{}}' data-toggle="dropdown" data-trigger-keypress-button="true">
+                        <span class="cs-dropdown-switcher__trigger-span view-fr_fr">
+                                                    <img
+            class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--active lazyload"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_fr_fr.svg"
+            alt="France"
+                                >
+        <noscript>
+            <img
+                class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--active lazyload"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_fr_fr.svg"
+                alt="France"
+            >
+        </noscript>
+                                                                    France                                                        </span>
+                    </div>
+                    <ul class="cs-dropdown-switcher__list dropdown switcher-dropdown" data-target="dropdown">
+                        <li class="cs-dropdown-switcher__list-item | view-fr_fr switcher-option">
+                        </li>
+                        <li class="cs-dropdown-switcher__list-item | view-de_de switcher-option">
+                            <a class="cs-dropdown-switcher__list-item-link" href="#" data-post='{"action":"https:\/\/www.megaport.fr\/stores\/store\/redirect\/","data":{"___store":"de_de","___from_store":"fr_fr","uenc":"aHR0cHM6Ly9tZWdhcG9ydC5kZS9uYXZpZ2F0aW9uL21vYmlsZS9pbmRleC8_X19fc3RvcmU9ZGVfZGUmY2FjaGVfa2V5PTg3YmIxNmY5YmE3NTgxNzliOWUzMzIwNGJjZWUxOTZhJmdlbmVyYXRpb25fdGltZT0xNzI5MjM4Njkw"}}'>
+                                                                            <img
+            class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--de_de lazyload"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_de_de.svg"
+            alt="Deutschland"
+                                >
+        <noscript>
+            <img
+                class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--de_de lazyload"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_de_de.svg"
+                alt="Deutschland"
+            >
+        </noscript>
+                                                                                                        Deutschland                                                            </a>
+                        </li>
+                        <li class="cs-dropdown-switcher__list-item | view-ch_de switcher-option">
+                            <a class="cs-dropdown-switcher__list-item-link" href="#" data-post='{"action":"https:\/\/www.megaport.fr\/stores\/store\/redirect\/","data":{"___store":"ch_de","___from_store":"fr_fr","uenc":"aHR0cHM6Ly93d3cubWVnYXBvcnQuY2gvbmF2aWdhdGlvbi9tb2JpbGUvaW5kZXgvP19fX3N0b3JlPWNoX2RlJmNhY2hlX2tleT04N2JiMTZmOWJhNzU4MTc5YjllMzMyMDRiY2VlMTk2YSZnZW5lcmF0aW9uX3RpbWU9MTcyOTIzODY5MA~~"}}'>
+                                                                            <img
+            class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--ch_de lazyload"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_ch_de.svg"
+            alt="Schweiz"
+                                >
+        <noscript>
+            <img
+                class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--ch_de lazyload"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_ch_de.svg"
+                alt="Schweiz"
+            >
+        </noscript>
+                                                                                                        Schweiz                                                            </a>
+                        </li>
+                        <li class="cs-dropdown-switcher__list-item | view-gb_en switcher-option">
+                            <a class="cs-dropdown-switcher__list-item-link" href="#" data-post='{"action":"https:\/\/www.megaport.fr\/stores\/store\/redirect\/","data":{"___store":"gb_en","___from_store":"fr_fr","uenc":"aHR0cHM6Ly93d3cubWVnYXBvcnRwYy5jby51ay9uYXZpZ2F0aW9uL21vYmlsZS9pbmRleC8_X19fc3RvcmU9Z2JfZW4mY2FjaGVfa2V5PTg3YmIxNmY5YmE3NTgxNzliOWUzMzIwNGJjZWUxOTZhJmdlbmVyYXRpb25fdGltZT0xNzI5MjM4Njkw"}}'>
+                                                                            <img
+            class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--gb_en lazyload"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_gb_en.svg"
+            alt="United Kingdom"
+                                >
+        <noscript>
+            <img
+                class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--gb_en lazyload"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_gb_en.svg"
+                alt="United Kingdom"
+            >
+        </noscript>
+                                                                                                        United Kingdom                                                            </a>
+                        </li>
+                        <li class="cs-dropdown-switcher__list-item | view-it_it switcher-option">
+                            <a class="cs-dropdown-switcher__list-item-link" href="#" data-post='{"action":"https:\/\/www.megaport.fr\/stores\/store\/redirect\/","data":{"___store":"it_it","___from_store":"fr_fr","uenc":"aHR0cHM6Ly93d3cubWVnYXBvcnQuaXQvbmF2aWdhdGlvbi9tb2JpbGUvaW5kZXgvP19fX3N0b3JlPWl0X2l0JmNhY2hlX2tleT04N2JiMTZmOWJhNzU4MTc5YjllMzMyMDRiY2VlMTk2YSZnZW5lcmF0aW9uX3RpbWU9MTcyOTIzODY5MA~~"}}'>
+                                                                            <img
+            class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--it_it lazyload"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_it_it.svg"
+            alt="Italia"
+                                >
+        <noscript>
+            <img
+                class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--it_it lazyload"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_it_it.svg"
+                alt="Italia"
+            >
+        </noscript>
+                                                                                                        Italia                                                            </a>
+                        </li>
+                        <li class="cs-dropdown-switcher__list-item | view-nl_nl switcher-option">
+                            <a class="cs-dropdown-switcher__list-item-link" href="#" data-post='{"action":"https:\/\/www.megaport.fr\/stores\/store\/redirect\/","data":{"___store":"nl_nl","___from_store":"fr_fr","uenc":"aHR0cHM6Ly93d3cubWVnYXBvcnRwYy5ubC9uYXZpZ2F0aW9uL21vYmlsZS9pbmRleC8_X19fc3RvcmU9bmxfbmwmY2FjaGVfa2V5PTg3YmIxNmY5YmE3NTgxNzliOWUzMzIwNGJjZWUxOTZhJmdlbmVyYXRpb25fdGltZT0xNzI5MjM4Njkw"}}'>
+                                                                            <img
+            class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--nl_nl lazyload"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_nl_nl.svg"
+            alt="Nederland"
+                                >
+        <noscript>
+            <img
+                class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--nl_nl lazyload"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_nl_nl.svg"
+                alt="Nederland"
+            >
+        </noscript>
+                                                                                                        Nederland                                                            </a>
+                        </li>
+                        <li class="cs-dropdown-switcher__list-item | view-es_es switcher-option">
+                            <a class="cs-dropdown-switcher__list-item-link" href="#" data-post='{"action":"https:\/\/www.megaport.fr\/stores\/store\/redirect\/","data":{"___store":"es_es","___from_store":"fr_fr","uenc":"aHR0cHM6Ly93d3cubWVnYXBvcnQuZXMvbmF2aWdhdGlvbi9tb2JpbGUvaW5kZXgvP19fX3N0b3JlPWVzX2VzJmNhY2hlX2tleT04N2JiMTZmOWJhNzU4MTc5YjllMzMyMDRiY2VlMTk2YSZnZW5lcmF0aW9uX3RpbWU9MTcyOTIzODY5MA~~"}}'>
+                                                                            <img
+            class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--es_es lazyload"
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            data-src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_es_es.svg"
+            alt="España"
+                                >
+        <noscript>
+            <img
+                class="cs-dropdown-switcher__option-icon cs-dropdown-switcher__option-icon--es_es lazyload"
+                src="https://d10mhq06fikmnr.cloudfront.net/static/version1724338874/frontend/Creativestyle/theme-megaport/fr_FR/images/icons/flag_es_es.svg"
+                alt="España"
+            >
+        </noscript>
+                                                                                                        España                                                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </ul>
+</nav>
